@@ -385,8 +385,7 @@ int Execute(DecodedInstr *d, RegVals *rVals) {
             return mips.registers[a] + b;
 
         }
-    }
-    else if (d->type == R) {//R Type
+    }if (d->type == R) {//R Type
 
         int a = 0;
         int b = 0;
